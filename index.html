@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERDANT — Fine Dining & Bistro | Toshkent</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230F3D2E'/%3E%3Crect x='5' y='5' width='54' height='54' rx='12' fill='none' stroke='%23C89B3C' stroke-width='2.5' stroke-opacity='0.7'/%3E%3Cpath d='M18 19 L32 47 L46 19' fill='none' stroke='%23C89B3C' stroke-width='4.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='16' r='3.5' fill='%23D8AE52'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="siteHeader" class="v-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title font-serif">VERDANT</span>
+          <span class="brand-sub">FINE DINING & BISTRO</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Asosiy navigatsiya">
+        <a href="#home" class="nav-link-luxury">Bosh sahifa</a>
+        <a href="#about" class="nav-link-luxury">Biz haqimizda</a>
+        <a href="#menu" class="nav-link-luxury">Menyu</a>
+        <a href="#chef" class="nav-link-luxury">Oshpaz tanlovi</a>
+        <a href="#gallery" class="nav-link-luxury">Galereya</a>
+        <a href="#reviews" class="nav-link-luxury">Fikrlar</a>
+        <a href="#faq" class="nav-link-luxury">FAQ</a>
+        <a href="#contact" class="nav-link-luxury">Aloqa</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggleBtn" type="button" aria-label="Tungi va kunduzgi rejim" class="icon-btn-luxury v-card">
+          <i id="themeToggleIcon" class="fa-solid fa-moon"></i>
+        </button>
+
+        <button id="openCartBtn" type="button" aria-label="Buyurtma savatini ochish" class="btn-outline-luxury cart-trigger-btn">
+          <i class="fa-solid fa-bag-shopping v-gold-text"></i>
+          <span class="hide-xs">Savat</span>
+          <span id="cartCountBadge" class="cart-badge tabular-nums">0</span>
+        </button>
+
+        <a href="#reservation" class="btn-luxury header-reserve-btn">
+          <span>Stol bron qilish</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <button id="mobileMenuBtn" type="button" aria-label="Mobil menyu" class="icon-btn-luxury v-card mobile-toggle-btn">
+          <i id="mobileMenuIcon" class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu hidden">
+      <div class="container mobile-menu-inner">
+        <div class="mobile-nav-grid">
+          <a href="#home" class="mobile-nav-link">Bosh sahifa</a>
+          <a href="#about" class="mobile-nav-link">Biz haqimizda</a>
+          <a href="#menu" class="mobile-nav-link">Menyu</a>
+          <a href="#chef" class="mobile-nav-link">Oshpaz tanlovi</a>
+          <a href="#gallery" class="mobile-nav-link">Galereya</a>
+          <a href="#reviews" class="mobile-nav-link">Fikrlar</a>
+          <a href="#faq" class="mobile-nav-link">FAQ</a>
+          <a href="#contact" class="mobile-nav-link">Aloqa</a>
+        </div>
+        <a href="#reservation" class="mobile-nav-link btn-luxury mobile-reserve-btn">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Stol bron qilish</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="hero-section photo-bg">
+    <img
+      src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=85"
+      alt="VERDANT fine dining zali"
+      onerror="this.src='https://placehold.co/1800x1000/0F3D2E/D8AE52?text=VERDANT+Fine+Dining'"
+      class="hero-bg-img"
+    >
+    <div class="hero-overlay-r"></div>
+    <div class="hero-overlay-t"></div>
+
+    <div class="container hero-content">
+      <div class="hero-grid">
+        <div class="hero-main">
+          <div class="hero-pill">
+            <i class="fa-solid fa-award"></i>
+            <span>Toshkent | Fine Dining & Bistro</span>
+          </div>
+
+          <h1 class="hero-title font-serif">
+            Nafis gastronomiya va <span class="italic gold-bright">unutilmas</span> ta'm san'ati
+          </h1>
+
+          <p class="hero-desc">
+            VERDANT — Toshkent markazida joylashgan zamonaviy mualliflik restorani. Saralangan mavsumiy mahsulotlar, xalqaro oshpazlar mahorati va hashamatli osoyishtalik muhitida har bir tashrifingiz bayramga aylanadi.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#menu" class="btn-gold btn-lg">
+              <span>Menyuni ko'rish</span>
+              <i class="fa-solid fa-utensils"></i>
+            </a>
+            <a href="#reservation" class="btn-outline-luxury btn-lg btn-glass">
+              <i class="fa-regular fa-calendar-check gold-bright"></i>
+              <span>Stol bron qilish</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-box">
+              <div class="stat-top">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span class="font-serif tabular-nums">12+</span>
+              </div>
+              <p>Yillik tajriba</p>
+            </div>
+            <div class="stat-box">
+              <div class="stat-top">
+                <i class="fa-solid fa-star"></i>
+                <span class="font-serif tabular-nums">4.9</span>
+              </div>
+              <p>Mijozlar reytingi</p>
+            </div>
+            <div class="stat-box">
+              <div class="stat-top">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span class="font-serif tabular-nums">100%</span>
+              </div>
+              <p>Halol standart</p>
+            </div>
+            <div class="stat-box">
+              <div class="stat-top">
+                <i class="fa-solid fa-bell-concierge"></i>
+                <span class="font-serif tabular-nums">45+</span>
+              </div>
+              <p>Mualliflik taomlari</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-feature-wrap">
+          <div class="hero-feature-card">
+            <div class="hero-feature-img-box photo-bg">
+              <img
+                src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=85"
+                alt="Qora tryufelli Filet Mignon"
+                onerror="this.src='https://placehold.co/800x600/0F3D2E/D8AE52?text=VERDANT+Steak'"
+              >
+              <span class="badge-dark">
+                <i class="fa-solid fa-crown"></i>
+                <span>Oshpaz imzosi</span>
+              </span>
+            </div>
+            <div class="hero-feature-body">
+              <div class="flex-between">
+                <h2 class="font-serif">Filet Mignon Tryufel</h2>
+                <span class="gold-bright bold tabular-nums">265 000 so'm</span>
+              </div>
+              <p>28 kun yetiltirilgan marmar mol go'shti, qora tryufel pyuresi va za'faronli demi-glas sousi.</p>
+            </div>
+            <div class="hero-feature-footer">
+              <span><i class="fa-regular fa-clock gold-bright"></i> 08:30 - 23:30</span>
+              <span><i class="fa-solid fa-location-dot gold-bright"></i> Amir Temur 108</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section border-b">
+    <div class="container about-grid">
+      <div class="about-media photo-bg">
+        <img
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85"
+          alt="VERDANT oshxonasi"
+          onerror="this.src='https://placehold.co/900x1100/0F3D2E/D8AE52?text=VERDANT+Kitchen'"
+        >
+        <div class="about-quote-box">
+          <i class="fa-solid fa-quote-left gold-bright"></i>
+          <p class="font-serif italic">Har bir tarelkada tabiiy mahsulotning asl nafosati va oshpaz qalbining harorati mujassam.</p>
+          <span class="quote-author">Bosh oshpaz — Kamoliddin Rahmatullayev</span>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="section-eyebrow">
+          <i class="fa-solid fa-diamond"></i>
+          <span>Biz haqimizda</span>
+        </div>
+        <h2 class="section-title font-serif">Toshkent qalbidagi zamonaviy fine-dining madaniyati</h2>
+        <p class="section-text">2014-yildan buyon faoliyat yuritayotgan VERDANT restorani Yevropa gastronomiya maktabi an'analarini O'zbekistonning saralangan organik mahsulotlari bilan uyg'unlashtiradi. Bizning har bir taomimiz buyurtma qabul qilingan daqiqadan boshlab noldan tayyorlanadi.</p>
+        <p class="section-text">Keng panoramali asosiy zal, yashil bog'li ochiq terrasa va maxsus akustikaga ega yopiq VIP xonalarimiz ishbilarmonlik uchrashuvlari, oilaviy kechalar hamda muhim tantanalar uchun ideal muhit yaratadi.</p>
+
+        <div class="features-grid">
+          <div class="feature-card v-card">
+            <div class="feature-icon v-gold-soft v-gold-text"><i class="fa-solid fa-seedling"></i></div>
+            <div>
+              <h3>100% Halol va Organik</h3>
+              <p>Sertifikatlangan halol go'sht va har tong fermerlardan keltiriladigan barra mahsulotlar.</p>
+            </div>
+          </div>
+          <div class="feature-card v-card">
+            <div class="feature-icon v-gold-soft v-gold-text"><i class="fa-solid fa-fire-burner"></i></div>
+            <div>
+              <h3>Ochiq eman grili</h3>
+              <p>Steyklarimiz tabiiy eman cho'g'ida maxsus harorat nazorati ostida pishiriladi.</p>
+            </div>
+          </div>
+          <div class="feature-card v-card">
+            <div class="feature-icon v-gold-soft v-gold-text"><i class="fa-solid fa-award"></i></div>
+            <div>
+              <h3>Xalqaro oshpazlar jamoasi</h3>
+              <p>Parij, Milan va Dubay restoranlarida malaka oshirgan tajribali ustalardan tarkib topgan.</p>
+            </div>
+          </div>
+          <div class="feature-card v-card">
+            <div class="feature-icon v-gold-soft v-gold-text"><i class="fa-solid fa-champagne-glasses"></i></div>
+            <div>
+              <h3>Shaxsiy VIP xonalar</h3>
+              <p>6 dan 24 nafargacha mehmonlar uchun sokin, hashamatli va alohida xizmatli zallar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Gastronomik menyu</span>
+          </div>
+          <h2 id="menuSectionTitle" class="section-title font-serif">Mualliflik menyusi va narxlar</h2>
+          <p id="menuSectionSubtitle" class="section-text">Nonushtadan tortib eman cho'g'ida pishirilgan steyklar va qandolatxona desertlarigacha barcha taomlarimizni kashf eting.</p>
+        </div>
+        <span id="resultsCounter" class="results-pill v-panel tabular-nums">
+          <i class="fa-solid fa-plate-wheat v-gold-text"></i>
+          <span>14 ta taom</span>
+        </span>
+      </div>
+
+      <div class="menu-controls v-panel">
+        <div id="categoryTabs" class="category-tabs" role="tablist">
+          <button type="button" data-category="all" class="category-tab category-tab-active v-card">
+            <i class="fa-solid fa-border-all"></i>
+            <span>Barchasi</span>
+          </button>
+          <button type="button" data-category="nonushta" class="category-tab v-card">
+            <i class="fa-solid fa-mug-saucer"></i>
+            <span>Nonushta</span>
+          </button>
+          <button type="button" data-category="asosiy" class="category-tab v-card">
+            <i class="fa-solid fa-bowl-food"></i>
+            <span>Asosiy taomlar</span>
+          </button>
+          <button type="button" data-category="gril" class="category-tab v-card">
+            <i class="fa-solid fa-fire"></i>
+            <span>Gril va Steyklar</span>
+          </button>
+          <button type="button" data-category="desertlar" class="category-tab v-card">
+            <i class="fa-solid fa-cake-candles"></i>
+            <span>Desertlar</span>
+          </button>
+          <button type="button" data-category="ichimliklar" class="category-tab v-card">
+            <i class="fa-solid fa-martini-glass-citrus"></i>
+            <span>Ichimliklar</span>
+          </button>
+        </div>
+
+        <div class="filter-bar">
+          <div class="input-icon-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="searchInput" type="text" placeholder="Taom nomi yoki tarkibi bo'yicha qidirish..." class="v-input">
+          </div>
+          <div class="input-icon-wrap">
+            <i class="fa-solid fa-arrow-down-wide-short"></i>
+            <select id="sortSelect" aria-label="Saralash" class="v-input">
+              <option value="default">Saralash: Standart</option>
+              <option value="price-asc">Arzondan qimmatga</option>
+              <option value="price-desc">Qimmatdan arzonga</option>
+              <option value="rating-desc">Reyting bo'yicha</option>
+            </select>
+          </div>
+          <button id="favoritesToggleBtn" type="button" class="fav-filter-btn v-card">
+            <i class="fa-regular fa-heart"></i>
+            <span>Sevimlilar (<span id="favCountLabel" class="tabular-nums">0</span>)</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="menuGrid" class="cards-grid-3"></div>
+
+      <div id="emptyStateBox" class="empty-state v-card hidden">
+        <div class="empty-icon v-panel v-gold-text">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <h3 class="font-serif">Mos taom topilmadi</h3>
+        <p class="v-text-muted">Qidiruv matni yoki tanlangan filtrlar bo'yicha natija chiqmadi. Filtrlarni tozalab qayta urinib ko'ring.</p>
+        <button id="resetFiltersBtn" type="button" class="btn-luxury btn-md">
+          <i class="fa-solid fa-rotate-left"></i>
+          <span>Filtrlarni tozalash</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="chef" class="section chef-section">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <div class="section-eyebrow gold-bright">
+            <i class="fa-solid fa-crown"></i>
+            <span>Oshpaz tanlovi va takliflar</span>
+          </div>
+          <h2 class="section-title font-serif text-white">Bosh oshpazning 3 ta imzo taomi</h2>
+          <p class="section-text text-white-muted">Maxsus mualliflik retseptlari asosida har kuni cheklangan miqdorda tayyorlanadigan eng sara degustatsiya taomlari.</p>
+        </div>
+        <div class="chef-badge-pill">
+          <i class="fa-solid fa-award"></i>
+          <span>Michelin darajasidagi sifat</span>
+        </div>
+      </div>
+
+      <div id="chefSpecialsGrid" class="cards-grid-3"></div>
+
+      <div class="promo-banner">
+        <div class="promo-info">
+          <div class="promo-tag">
+            <i class="fa-solid fa-tag"></i>
+            <span>Maxsus taklif — 15% chegirma</span>
+          </div>
+          <h3 class="font-serif">Onlayn buyurtmangizga 15% chegirma oling</h3>
+          <p>Savat orqali rasmiylashtirilgan barcha taomlar uchun <strong class="gold-bright">VERDANT15</strong> promo-kodini nusxalang yoki bir bosishda savatingizga faollashtiring.</p>
+        </div>
+        <div class="promo-actions">
+          <div class="promo-code-box">VERDANT15</div>
+          <button id="copyPromoBannerBtn" type="button" class="btn-outline-luxury btn-glass btn-md">
+            <i class="fa-regular fa-copy gold-bright"></i>
+            <span id="copyPromoBannerLabel">Nusxalash</span>
+          </button>
+          <button id="applyPromoBannerBtn" type="button" class="btn-gold btn-md">
+            <span>Savatga qo'llash</span>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section border-b v-panel">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <div class="section-eyebrow">
+            <i class="fa-regular fa-images"></i>
+            <span>Galereya</span>
+          </div>
+          <h2 class="section-title font-serif">Restoran muhiti va gastronomik lahzalar</h2>
+        </div>
+        <p class="v-text-muted gallery-hint">
+          <i class="fa-solid fa-magnifying-glass-plus v-gold-text"></i>
+          <span>Kattalashtirish uchun surat ustiga bosing</span>
+        </p>
+      </div>
+      <div id="galleryGrid" class="cards-grid-3"></div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section border-b" tabindex="-1">
+    <div class="container">
+      <div class="section-head-row">
+        <div>
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-comments"></i>
+            <span>Mijozlar fikri</span>
+          </div>
+          <h2 class="section-title font-serif">Mehmonlarimizning samimiy taassurotlari</h2>
+          <p class="section-text">Har 5 soniyada yangilanuvchi 15 ta haqiqiy sharh. O'qish uchun kursor bilan ustiga boring yoki tugmalar yordamida almashtiring.</p>
+        </div>
+        <div class="review-controls">
+          <span id="reviewCounter" class="review-counter v-card tabular-nums">01 / 15</span>
+          <button id="reviewPauseBtn" type="button" aria-label="Pauza" class="icon-btn-luxury v-card">
+            <i id="reviewPauseIcon" class="fa-solid fa-pause"></i>
+          </button>
+          <button id="reviewPrevBtn" type="button" aria-label="Oldingi" class="icon-btn-luxury v-card">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button id="reviewNextBtn" type="button" aria-label="Keyingi" class="icon-btn-luxury v-card">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="reviewsCarouselWrap" class="reviews-wrap">
+        <div id="reviewsCardsGrid" class="cards-grid-3"></div>
+        <div class="review-footer">
+          <div class="review-progress-wrap">
+            <div class="review-progress-labels">
+              <span id="reviewAutoStatus"><i class="fa-solid fa-rotate v-gold-text"></i> Har 5 soniyada almashadi</span>
+              <span class="tabular-nums">5s</span>
+            </div>
+            <div class="review-progress-track v-panel">
+              <div id="reviewProgressBar" class="review-progress-bar"></div>
+            </div>
+          </div>
+          <div id="reviewDotsContainer" class="review-dots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section border-b v-panel">
+    <div class="container container-sm">
+      <div class="section-head-center">
+        <div class="section-eyebrow">
+          <i class="fa-regular fa-circle-question"></i>
+          <span>Savol va javoblar</span>
+        </div>
+        <h2 class="section-title font-serif">Ko'p so'raladigan savollar</h2>
+        <p class="section-text">Tashrifingizdan oldin eng muhim ma'lumotlar bilan tanishib chiqing.</p>
+      </div>
+      <div id="faqAccordion" class="faq-list"></div>
+    </div>
+  </section>
+
+  <section id="reservation" class="section border-b">
+    <div class="container">
+      <div class="section-head-left">
+        <div class="section-eyebrow">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Stol band qilish</span>
+        </div>
+        <h2 class="section-title font-serif">O'zingizga qulay stolni oldindan bron qiling</h2>
+        <p class="section-text">Ma'lumotlarni to'ldiring — bronlaringiz brauzeringizda saqlanib qoladi va istalgan payt boshqarishingiz mumkin.</p>
+      </div>
+
+      <div class="reservation-grid">
+        <div class="res-sidebar">
+          <div class="vip-box">
+            <span class="vip-eyebrow">VIP servis va qoidalar</span>
+            <h3 class="font-serif">Mehmonlar uchun qulayliklar</h3>
+            <div class="vip-list">
+              <div class="vip-item">
+                <div class="vip-icon"><i class="fa-solid fa-couch"></i></div>
+                <div>
+                  <h4>3 xil qulay hudud</h4>
+                  <p>Panoramali asosiy zal, yashil yozgi terrasa va yopiq VIP kabinetlar.</p>
+                </div>
+              </div>
+              <div class="vip-item">
+                <div class="vip-icon"><i class="fa-regular fa-clock"></i></div>
+                <div>
+                  <h4>20 daqiqalik kutish kafolati</h4>
+                  <p>Bron qilingan stol belgilangan vaqtdan 20 daqiqa davomida saqlab turiladi.</p>
+                </div>
+              </div>
+              <div class="vip-item">
+                <div class="vip-icon"><i class="fa-solid fa-gift"></i></div>
+                <div>
+                  <h4>Bayramona bezak xizmati</h4>
+                  <p>Tug'ilgan kun va maxsus kechalar uchun oshpazdan bepul desert taqdim etiladi.</p>
+                </div>
+              </div>
+            </div>
+            <div class="vip-footer">
+              <span>Katta tadbirlar uchun</span>
+              <span class="tabular-nums"><i class="fa-solid fa-phone"></i> +998 71 200 45 00</span>
+            </div>
+          </div>
+
+          <div class="saved-res-box v-panel">
+            <div class="flex-between mb-16">
+              <h3 class="font-serif">Saqlangan bronlarim</h3>
+              <span id="reservationsCountBadge" class="res-count-badge tabular-nums">0 ta</span>
+            </div>
+            <div id="reservationsList" class="res-list"></div>
+          </div>
+        </div>
+
+        <div class="res-form-card v-card">
+          <h3 class="font-serif">Bron arizasi</h3>
+          <p class="v-text-muted mb-24">Barcha yulduzcha (*) qo'yilgan maydonlarni to'ldiring.</p>
+          <div id="resFormFeedback" class="feedback-box hidden"></div>
+
+          <form id="reservationForm" novalidate class="form-stack">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="resName">To'liq ism familiya *</label>
+                <input id="resName" type="text" placeholder="Masalan: Sardor Karimov" class="v-input">
+                <p id="errResName" class="field-error hidden"></p>
+              </div>
+              <div class="form-group">
+                <label for="resPhone">Telefon raqami *</label>
+                <input id="resPhone" type="tel" placeholder="+998 90 123 45 67" class="v-input">
+                <p id="errResPhone" class="field-error hidden"></p>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="resDate">Tashrif sanasi *</label>
+                <input id="resDate" type="date" class="v-input">
+                <p id="errResDate" class="field-error hidden"></p>
+              </div>
+              <div class="form-group">
+                <label for="resTime">Tashrif vaqti *</label>
+                <select id="resTime" class="v-input">
+                  <option value="">Vaqtni tanlang</option>
+                  <option value="09:30">09:30 — Nonushta</option>
+                  <option value="12:30">12:30 — Biznes tushlik</option>
+                  <option value="15:00">15:00 — Tushdan keyin</option>
+                  <option value="18:30">18:30 — Kechki ovqat</option>
+                  <option value="20:00">20:00 — Kechki oqshom</option>
+                  <option value="21:30">21:30 — Kechki oqshom</option>
+                </select>
+                <p id="errResTime" class="field-error hidden"></p>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="resGuests">Mehmonlar soni (1-20) *</label>
+                <input id="resGuests" type="number" min="1" max="20" value="2" class="v-input tabular-nums">
+                <p id="errResGuests" class="field-error hidden"></p>
+              </div>
+              <div class="form-group">
+                <label for="resArea">Joy tanlovi *</label>
+                <select id="resArea" class="v-input">
+                  <option value="Asosiy zal">Asosiy panoramali zal</option>
+                  <option value="Yozgi terrasa">Yozgi bog' terrasasi</option>
+                  <option value="VIP xona">Yopiq VIP xona</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="resNote">Maxsus izoh (ixtiyoriy)</label>
+              <textarea id="resNote" rows="3" placeholder="Masalan: Deraza yonidagi stol..." class="v-input"></textarea>
+            </div>
+
+            <button type="submit" class="btn-luxury btn-full btn-lg">
+              <i class="fa-solid fa-check-double"></i>
+              <span>Stolni tasdiqlash</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section v-panel">
+    <div class="container">
+      <div class="section-head-left">
+        <div class="section-eyebrow">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <span>Aloqa ma'lumotlari</span>
+        </div>
+        <h2 class="section-title font-serif">Biz bilan bog'lanish va manzilimiz</h2>
+        <p class="section-text">Toshkent shahrining markazida qulay joylashuv, bepul qo'riqlanadigan avtoturargoh va har kunlik xizmat.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card v-card">
+          <h3 class="font-serif">VERDANT — Toshkent</h3>
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-icon v-gold-soft v-gold-text"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <p class="contact-label">Manzil</p>
+                <p class="contact-val">Toshkent shahri, Yunusobod tumani, Amir Temur shoh ko'chasi 108</p>
+                <p class="v-text-muted small">Bodomzor metro bekatidan 4 daqiqalik piyoda yo'l</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon v-gold-soft v-gold-text"><i class="fa-solid fa-phone-volume"></i></div>
+              <div class="flex-1">
+                <p class="contact-label">Telefon raqamlar</p>
+                <div class="copy-row">
+                  <a href="tel:+998712004500" class="contact-link tabular-nums">+998 71 200 45 00</a>
+                  <button type="button" data-copy-text="+998 71 200 45 00" class="copy-info-btn v-panel">
+                    <i class="fa-regular fa-copy copy-icon"></i>
+                    <span class="copy-label">Nusxalash</span>
+                  </button>
+                </div>
+                <div class="copy-row">
+                  <a href="tel:+998909804500" class="contact-link tabular-nums">+998 90 980 45 00</a>
+                  <button type="button" data-copy-text="+998 90 980 45 00" class="copy-info-btn v-panel">
+                    <i class="fa-regular fa-copy copy-icon"></i>
+                    <span class="copy-label">Nusxalash</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon v-gold-soft v-gold-text"><i class="fa-solid fa-envelope"></i></div>
+              <div class="flex-1 copy-row">
+                <div>
+                  <p class="contact-label">Elektron pochta</p>
+                  <a href="mailto:info@verdant-bistro.uz" class="contact-link">info@verdant-bistro.uz</a>
+                </div>
+                <button type="button" data-copy-text="info@verdant-bistro.uz" class="copy-info-btn v-panel">
+                  <i class="fa-regular fa-copy copy-icon"></i>
+                  <span class="copy-label">Nusxalash</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon v-gold-soft v-gold-text"><i class="fa-regular fa-clock"></i></div>
+              <div class="flex-1">
+                <p class="contact-label">Ish vaqti (Dushanba - Yakshanba)</p>
+                <div class="hours-list">
+                  <div class="hours-row"><span>Dushanba — Payshanba</span><strong class="tabular-nums">08:30 — 23:00</strong></div>
+                  <div class="hours-row"><span>Juma — Shanba</span><strong class="tabular-nums">08:30 — 00:00</strong></div>
+                  <div class="hours-row"><span>Yakshanba</span><strong class="tabular-nums">09:00 — 23:00</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card photo-bg">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1100&q=85" alt="VERDANT joylashuvi" class="map-bg-img">
+          <div class="map-overlay"></div>
+          <div class="map-content">
+            <div class="flex-between">
+              <span class="badge-dark"><i class="fa-solid fa-compass"></i> 41.3385 N, 69.2847 E</span>
+              <span class="badge-open"><i class="fa-solid fa-circle"></i> Hozir ochiq</span>
+            </div>
+            <div class="map-bottom">
+              <div class="map-pin"><i class="fa-solid fa-location-dot"></i></div>
+              <h4 class="font-serif">VERDANT Flagship — Toshkent</h4>
+              <p>Amir Temur shoh ko'chasi 108, Yunusobod tumani. Valet-parking va bepul Wi-Fi mavjud.</p>
+              <div class="map-actions">
+                <a href="https://maps.google.com/?q=Amir+Temur+108+Tashkent+Uzbekistan" target="_blank" rel="noopener noreferrer" class="btn-gold btn-md">
+                  <i class="fa-solid fa-diamond-turn-right"></i>
+                  <span>Xaritada yo'nalish olish</span>
+                </a>
+                <a href="tel:+998712004500" class="btn-outline-luxury btn-glass btn-md">
+                  <i class="fa-solid fa-phone gold-bright"></i>
+                  <span>Qo'ng'iroq qilish</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-gold-line"></div>
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#home" class="brand-logo">
+            <div class="brand-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="brand-text">
+              <span class="brand-title font-serif text-white">VERDANT</span>
+              <span class="brand-sub gold-bright">FINE DINING & BISTRO</span>
+            </div>
+          </a>
+          <p class="footer-desc">Toshkentdagi mualliflik fine-dining restorani. Tabiiy halol mahsulotlar, xalqaro oshpazlik mahorati va unutilmas muhit.</p>
+          <div class="social-row">
+            <a href="#contact" aria-label="Instagram" class="icon-btn-luxury social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#contact" aria-label="Telegram" class="icon-btn-luxury social-btn"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#contact" aria-label="Facebook" class="icon-btn-luxury social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#contact" aria-label="YouTube" class="icon-btn-luxury social-btn"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Tezkor havolalar</h4>
+          <ul class="footer-links-2col">
+            <li><a href="#home">Bosh sahifa</a></li>
+            <li><a href="#about">Biz haqimizda</a></li>
+            <li><a href="#menu">Menyu</a></li>
+            <li><a href="#chef">Oshpaz tanlovi</a></li>
+            <li><a href="#gallery">Galereya</a></li>
+            <li><a href="#reviews">Fikrlar</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Aloqa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Aloqa va Ish vaqti</h4>
+          <ul class="footer-contact-list">
+            <li><i class="fa-solid fa-location-dot gold-bright"></i><span>Toshkent sh., Amir Temur shoh ko'chasi 108</span></li>
+            <li><i class="fa-solid fa-phone gold-bright"></i><span class="tabular-nums">+998 71 200 45 00</span></li>
+            <li><i class="fa-solid fa-envelope gold-bright"></i><span>info@verdant-bistro.uz</span></li>
+            <li><i class="fa-regular fa-clock gold-bright"></i><span class="tabular-nums">Du-Pa: 08:30 - 23:00<br>Ju-Sh: 08:30 - 00:00</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Yangiliklarga obuna</h4>
+          <p class="footer-desc">Yangi mavsumiy taomlar, yopiq degustatsiya kechalari va eksklyuziv promo-kodlardan xabardor bo'ling.</p>
+          <form id="newsletterForm" novalidate class="newsletter-form">
+            <input id="newsletterEmail" type="email" placeholder="Elektron pochtangiz" class="newsletter-input">
+            <button type="submit" class="btn-gold btn-full btn-md">
+              <span>Obuna bo'lish</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p id="newsletterFeedback" class="hidden newsletter-msg"></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 VERDANT Fine Dining & Bistro. Barcha huquqlar himoyalangan.</p>
+        <div class="footer-bottom-links">
+          <a href="#faq">Ko'p so'raladigan savollar</a>
+          <a href="#reservation">Stol bron qilish</a>
+          <button id="backToTopBtn" type="button" class="icon-btn-luxury top-btn">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span>Yuqoriga</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="dishModal" class="modal-overlay hidden">
+    <div id="dishModalBackdrop" class="modal-backdrop"></div>
+    <div class="modal-box v-card">
+      <button id="closeDishModalBtn" type="button" aria-label="Yopish" class="icon-btn-luxury modal-close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-grid">
+        <div class="modal-img-wrap photo-bg">
+          <img id="modalDishImg" src="" alt="Taom surati">
+          <span id="modalDishTag" class="badge-dark"></span>
+        </div>
+        <div class="modal-body">
+          <div>
+            <div class="modal-tags">
+              <span id="modalDishCategory" class="tag-pill v-panel"></span>
+              <span id="modalDishRating" class="tag-rating tabular-nums"></span>
+            </div>
+            <h3 id="modalDishName" class="font-serif modal-title"></h3>
+            <p id="modalDishDesc" class="v-text-muted modal-desc"></p>
+            <div class="modal-meta-grid">
+              <div class="meta-box v-panel"><span>Tayyorlanish</span><strong id="modalDishPrep" class="tabular-nums"></strong></div>
+              <div class="meta-box v-panel"><span>Kaloriya</span><strong id="modalDishCalories" class="tabular-nums"></strong></div>
+              <div class="meta-box v-panel"><span>Og'irligi</span><strong id="modalDishWeight" class="tabular-nums"></strong></div>
+            </div>
+            <div class="modal-ing-box v-panel">
+              <span>Tarkibi</span>
+              <p id="modalDishIngredients"></p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div>
+              <span class="price-label">Narxi</span>
+              <p id="modalDishPrice" class="modal-price v-gold-text tabular-nums"></p>
+            </div>
+            <button id="modalAddToCartBtn" type="button" class="btn-luxury btn-md">
+              <i class="fa-solid fa-plus"></i>
+              <span>Savatga qo'shish</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lightboxModal" class="modal-overlay hidden">
+    <div id="lightboxBackdrop" class="modal-backdrop"></div>
+    <div class="lightbox-box">
+      <button id="closeLightboxBtn" type="button" aria-label="Yopish" class="icon-btn-luxury modal-close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button id="lightboxPrevBtn" type="button" aria-label="Oldingi" class="icon-btn-luxury lb-nav lb-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="lightboxNextBtn" type="button" aria-label="Keyingi" class="icon-btn-luxury lb-nav lb-next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <div class="lb-img-wrap photo-bg">
+        <img id="lightboxImg" src="" alt="Galereya surati">
+      </div>
+      <div class="lb-caption">
+        <div>
+          <h3 id="lightboxTitle" class="font-serif"></h3>
+          <p id="lightboxCaption"></p>
+        </div>
+        <span id="lightboxCounter" class="gold-bright tabular-nums">01 / 06</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="cartDrawerWrapper" class="drawer-wrapper hidden">
+    <div id="cartBackdrop" class="modal-backdrop"></div>
+    <aside id="cartDrawerPanel" class="cart-panel cart-closed v-card">
+      <div class="drawer-header">
+        <div>
+          <h3 class="font-serif">Buyurtma savati</h3>
+          <p id="cartDrawerSubtitle" class="v-text-muted small">Tanlangan taomlar va hisob-kitob</p>
+        </div>
+        <button id="closeCartBtn" type="button" aria-label="Yopish" class="icon-btn-luxury v-panel">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div id="cartConfirmationBox" class="cart-confirm hidden">
+        <p id="cartConfirmationTitle" class="confirm-title"></p>
+        <p id="cartConfirmationText" class="confirm-text"></p>
+      </div>
+      <div id="cartItemsContainer" class="drawer-body"></div>
+      <div class="drawer-footer v-panel">
+        <div class="promo-field">
+          <label for="promoInput">Promo-kod (VERDANT15)</label>
+          <div class="promo-input-row">
+            <input id="promoInput" type="text" placeholder="Kodni kiriting" class="v-input uppercase">
+            <button id="applyPromoBtn" type="button" class="btn-gold btn-sm">Qo'llash</button>
+          </div>
+          <p id="promoStatusMsg" class="promo-msg hidden"></p>
+        </div>
+        <div class="totals-list">
+          <div class="total-row"><span>Taomlar summasi</span><strong id="subtotalValue" class="tabular-nums">0 so'm</strong></div>
+          <div id="discountRow" class="total-row text-ok hidden"><span id="discountLabel">Chegirma</span><strong id="discountValue" class="tabular-nums">-0 so'm</strong></div>
+          <div class="total-row"><span>Xizmat haqi (10%)</span><strong id="serviceFeeValue" class="tabular-nums">0 so'm</strong></div>
+          <div class="total-row grand-total"><span>Jami summa</span><strong id="grandTotalValue" class="v-gold-text tabular-nums">0 so'm</strong></div>
+        </div>
+        <div class="drawer-actions">
+          <button id="checkoutBtn" type="button" class="btn-luxury btn-md flex-2">
+            <i class="fa-solid fa-check"></i>
+            <span>Tasdiqlash</span>
+          </button>
+          <button id="clearCartBtn" type="button" class="btn-clear v-card flex-1">Tozalash</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div id="toastBanner" class="toast-banner hidden">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-body">
+      <p id="toastTitle" class="toast-title"></p>
+      <p id="toastMessage" class="toast-msg"></p>
+    </div>
+    <button id="closeToastBtn" type="button" aria-label="Yopish" class="toast-close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
